@@ -19,5 +19,14 @@ services:
       - .env
     volumes:
       - nps_data:/var/lib/postgresql/data
+  frontend:
+    build:
+      context: ./frontend/
+    ports:
+      - "3000:3000"
+    container_name: tcit_frontend
+    volumes:
+      - ./frontend:/opt
+    
 volumes:
   nps_data: {}
