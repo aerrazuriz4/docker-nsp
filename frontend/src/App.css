@@ -9,8 +9,26 @@
 
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
-td {
+td, th {
+  border: 1px solid black;
   text-align: center;
+}
+
+
+.new-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.delete-button {
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  text-decoration: underline;
 }
