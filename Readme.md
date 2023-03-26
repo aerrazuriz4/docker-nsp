@@ -1,18 +1,7 @@
-# CRUD API using node, Sequelize, Postgres and  Docker
+# CRUD Backend and Frontend using node, Sequelize, Postgres, React and  Docker
 
-Navigate where the docker-compose.yml is located and build the image (you can customize your image name in the docker-compose.yml file)
+Navigate where the docker-compose.yml is located and run this command to get things started
 ```
-docker-compose build
-```
-
-To run the db:
-
-```
-docker-compose up -d nsp_db
+docker-compose up -d --build
 ```
 
-To run the backend
-
-```
-docker-compose up -d nsp_backend
-```

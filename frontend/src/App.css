@@ -4,12 +4,23 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
-
+  gap: 20px;
 }
 
 table {
-  width: 100%;
+  width: 60%;
   border-collapse: collapse;
+}
+
+.title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.title img {
+  width: 60px;
+  height: 60px;
 }
 
 td, th {
@@ -17,12 +28,22 @@ td, th {
   text-align: center;
 }
 
+.filter {
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.filter input {
+  width: 50%;
+}
 
 .new-post {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
 }
 
 .delete-button {

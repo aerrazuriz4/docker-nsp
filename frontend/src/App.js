@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import api from './api';
 import { setPosts } from './store';
 import { useSelector, useDispatch } from 'react-redux'
@@ -22,12 +21,19 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="title">
+        <img src="tcit_logo.png"/>
+        <h1>
+          Posts CRUD App
+        </h1>
+      </div>
+      <div className="filter">
         <input
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
+          placeholder="Filtro de Nombre"
         />
         <button
           onClick={() => {
@@ -87,10 +93,12 @@ function App() {
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
+          placeholder="Nombre"
         />
         <input
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          placeholder="Descripción"
         />
         <button
           onClick={(e) => {
