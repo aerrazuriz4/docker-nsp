@@ -6,7 +6,6 @@ touch .env
 ```
 Add the following variables to .env file
 ```
-EXTERNAL_PORT=...(Backend port)
 PGUSER=...(Postgres User)
 PGPASSWORD=...(Postgres Password)
 PGDATABASE=...(Postgres DB name)

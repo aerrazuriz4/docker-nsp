@@ -26,7 +26,7 @@ app.use('/posts', require('./routes/posts')); //posts
     await sequelize.sync(
       { force: false } //Reset db every time
     );
-    app.listen(process.env.EXTERNAL_PORT); //DEF in docker.compose.yml
+    app.listen(3001); //DEF in docker.compose.yml
   } catch (error) {
     console.log(error);
   }
